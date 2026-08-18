@@ -12,7 +12,6 @@ services:
       - "3306:3306"
     volumes:
       - ./volumes/db/:/var/lib/mysql
-
   runner:
     build:
       context: .

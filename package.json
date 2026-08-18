@@ -13,6 +13,7 @@
     "start": "node dist/index.js",
     "build": "tsup src/index.ts --minify",
     "build:all": "tsc",
+  	"db:deploy": "npx prisma migrate deploy && npx prisma generate",
     "pm2:start": "pm2 start dist/index.js --name oasis-bot --watch",
     "pm2:stop": "pm2 stop oasis-bot",
     "pm2:restart": "pm2 restart oasis-bot",

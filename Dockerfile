@@ -27,4 +27,4 @@ COPY --from=builder --chown=botrunner:nodejs /app/ ./
 
 USER botrunner
 
-CMD ["node", "./dist/index.js"]
+CMD ["sh", "-c", "npm run db:deploy && npm run start"]
